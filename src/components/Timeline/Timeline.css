@@ -1,0 +1,51 @@
+.timeline {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  text-align: center;
+}
+
+.timeline__line {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000;
+  background-color: #f2f2f2;
+  padding: 9px 0;
+  margin: 0;
+  transition: .3s;
+}
+
+.timeline__line:hover {
+  opacity: .7;
+}
+
+.timeline__line_color_green {
+  color: #fff;
+  background-color: #000;
+}
+
+.timeline__text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.21;
+  color: #8b8b8b;
+  margin: 14px 0 0;
+}
+
+@media screen and (max-width: 545px){
+  .timeline {
+    grid-template-columns: 1fr 1.84fr;
+  }
+
+  .timeline__line {
+    font-size: 11px;
+    line-height: 13px;
+    padding: 11px 0;
+  }
+
+  .timeline__text {
+    font-size: 11px;
+    line-height: 13px;
+    margin-top: 10px;
+  }
+}
